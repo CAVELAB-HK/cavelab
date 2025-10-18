@@ -42,10 +42,10 @@ const Navigation = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? 'bg-white/95 backdrop-blur-md py-4 shadow-lg border-b border-[#E8EAED]' : 'bg-transparent py-6'
+      scrolled ? 'bg-white/98 backdrop-blur-md py-4 border-b-2 border-grey-800' : 'bg-transparent py-6'
     }`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <Link href="#hero" className="hover:opacity-80 transition-opacity">
+        <Link href="#hero" className="hover:opacity-70 transition-opacity">
           <Image 
             src="/cavelab-logo.png" 
             alt="CAVELAB" 
@@ -61,14 +61,14 @@ const Navigation = () => {
             <li key={item.name}>
               <Link
                 href={item.href}
-                className={`text-sm font-medium transition-all duration-200 relative group ${
+                className={`text-sm font-medium tracking-wide uppercase transition-all duration-200 relative group ${
                   activeSection === item.href.slice(1)
-                    ? 'text-[#5B8C9E]'
-                    : 'text-[#4A5568] hover:text-[#2B2B2B]'
+                    ? 'text-grey-800'
+                    : 'text-grey-500 hover:text-grey-800'
                 }`}
               >
                 {item.name}
-                <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-[#5B8C9E] transform origin-left transition-transform duration-200 ${
+                <span className={`absolute -bottom-1 left-0 w-full h-0.5 bg-grey-800 transform origin-left transition-transform duration-200 ${
                   activeSection === item.href.slice(1) ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
                 }`}></span>
               </Link>

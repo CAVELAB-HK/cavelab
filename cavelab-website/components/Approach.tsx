@@ -24,7 +24,7 @@ const Approach = () => {
   ];
 
   return (
-    <section id="approach" className="min-h-screen flex items-center bg-white py-24">
+    <section id="approach" className="min-h-screen flex items-center bg-grey-50 py-24">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           ref={ref}
@@ -32,7 +32,7 @@ const Approach = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-[#2B2B2B] mb-16 text-center">Our Approach</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-grey-800 mb-16 text-center tracking-tight">Our Approach</h2>
           
           <div className="grid md:grid-cols-3 gap-6">
             {approaches.map((item, index) => (
@@ -41,13 +41,15 @@ const Approach = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.6, delay: index * 0.15 }}
-                className="p-8 bg-gradient-to-br from-white to-[#F8F9FA] rounded-2xl border border-[#E8EAED] shadow-sm hover:shadow-xl hover:border-[#5B8C9E]/30 transform hover:-translate-y-1 transition-all duration-300"
+                className="bg-white border-2 border-grey-800 p-8 hover:bg-grey-800 hover:text-white transition-all duration-300 group relative"
               >
-                <div className="w-14 h-14 bg-[#5B8C9E]/10 rounded-xl flex items-center justify-center mb-6">
-                  <div className="text-2xl font-bold text-[#5B8C9E]">{index + 1}</div>
+                <div className="absolute top-4 right-4 w-16 h-16 border-2 border-grey-800 group-hover:border-white transition-colors flex items-center justify-center">
+                  <div className="text-3xl font-bold text-grey-800 group-hover:text-white transition-colors">{index + 1}</div>
                 </div>
-                <h3 className="text-xl font-semibold text-[#2B2B2B] mb-4">{item.title}</h3>
-                <p className="text-[#4A5568] leading-relaxed">{item.description}</p>
+                <div className="mt-16">
+                  <h3 className="text-xl font-bold text-grey-800 group-hover:text-white mb-4 uppercase tracking-wide">{item.title}</h3>
+                  <p className="text-grey-600 group-hover:text-grey-200 leading-relaxed">{item.description}</p>
+                </div>
               </motion.div>
             ))}
           </div>
