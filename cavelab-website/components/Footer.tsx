@@ -1,49 +1,53 @@
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="bg-grey-800 text-white py-16">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-3 gap-12 mb-12">
+    <footer className="bg-cavelab-gray text-white py-12 px-8">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-12 mb-8">
           <div>
-            <h3 className="text-2xl font-bold mb-4 tracking-widest">CAVELAB</h3>
-            <p className="text-grey-300 text-sm leading-relaxed">
-              Engineering the future of healthcare through precision design and intelligent technology.
+            <h3 className="text-lg font-medium mb-4">CAVELAB</h3>
+            <p className="text-gray-300 text-sm leading-relaxed">
+              Making healthcare accessible through innovative technology solutions.
             </p>
           </div>
-          
+
           <div>
-            <h4 className="text-sm font-bold mb-6 uppercase tracking-wider">Quick Links</h4>
-            <ul className="space-y-3">
-              <li><a href="#vision" className="text-grey-300 hover:text-white text-sm transition-colors uppercase tracking-wide">Vision</a></li>
-              <li><a href="#approach" className="text-grey-300 hover:text-white text-sm transition-colors uppercase tracking-wide">Approach</a></li>
-              <li><a href="#products" className="text-grey-300 hover:text-white text-sm transition-colors uppercase tracking-wide">Products</a></li>
-              <li><a href="#about" className="text-grey-300 hover:text-white text-sm transition-colors uppercase tracking-wide">About</a></li>
-            </ul>
-          </div>
-          
-          <div>
-            <h4 className="text-sm font-bold mb-6 uppercase tracking-wider">Contact</h4>
-            <ul className="space-y-3">
-              <li className="text-grey-300 text-sm">Hong Kong</li>
+            <h3 className="text-lg font-medium mb-4">Quick Links</h3>
+            <ul className="space-y-2 text-sm">
               <li>
-                <a href="mailto:cavelabltd@outlook.com" className="text-grey-300 hover:text-white text-sm transition-colors break-all">
-                  cavelabltd@outlook.com
+                <a href="#about" className="text-gray-300 hover:text-white transition-colors">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#products" className="text-gray-300 hover:text-white transition-colors">
+                  Products
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="text-gray-300 hover:text-white transition-colors">
+                  Contact
                 </a>
               </li>
             </ul>
           </div>
+
+          <div>
+            <h3 className="text-lg font-medium mb-4">Contact</h3>
+            <p className="text-gray-300 text-sm mb-2">
+              <a href="mailto:cavelabltd@outlook.com" className="hover:text-white transition-colors">
+                cavelabltd@outlook.com
+              </a>
+            </p>
+            <p className="text-gray-300 text-sm">
+              Hong Kong
+            </p>
+          </div>
         </div>
-        
-        <div className="border-t-2 border-grey-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-grey-400 text-sm uppercase tracking-wide">
-            &copy; 2025 CAVELAB Ltd. All rights reserved.
-          </p>
-          <p className="text-grey-400 text-sm uppercase tracking-wide">
-            Established June 18, 2025
-          </p>
+
+        <div className="border-t border-gray-600 pt-8 text-center text-sm text-gray-400">
+          <p>2025 CAVELAB. All rights reserved.</p>
         </div>
       </div>
     </footer>
-  );
-};
-
-export default Footer;
+  )
+}
