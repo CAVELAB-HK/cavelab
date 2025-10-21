@@ -30,6 +30,9 @@ export default function Navigation() {
             <a href="/doses-app" className="text-cavelab-gray hover:text-gray-600 transition-colors">
               Doses App
             </a>
+            <a href="/smart-pillbox" className="text-cavelab-gray hover:text-gray-600 transition-colors">
+              Smart Pillbox
+            </a>
             <a href="/#contact" className="text-cavelab-gray hover:text-gray-600 transition-colors">
               Contact
             </a>
@@ -80,6 +83,13 @@ export default function Navigation() {
               onClick={() => setIsOpen(false)}
             >
               Doses App
+            </a>
+            <a
+              href="/smart-pillbox"
+              className="block text-cavelab-gray hover:text-gray-600 transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Smart Pillbox
             </a>
             <a
               href="/#contact"

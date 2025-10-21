@@ -5,10 +5,10 @@ export default function DosesApp() {
   return (
     <main className="min-h-screen">
       <Navigation />
-      <section className="pt-32 md:pt-40 pb-16 md:pb-20 px-4 md:px-8 bg-white">
+      <section className="pt-32 md:pt-40 pb-20 md:pb-32 px-4 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12 md:mb-20">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-light text-cavelab-gray mb-6 md:mb-8 tracking-tight">
+          <div className="text-center mb-16 md:mb-24">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-light text-cavelab-gray mb-8 md:mb-12 tracking-tight">
               Doses App
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl text-gray-600 font-light max-w-3xl mx-auto leading-relaxed">
@@ -16,10 +16,7 @@ export default function DosesApp() {
             </p>
           </div>
 
-          <div className="mb-24 md:mb-32">
-            <h2 className="text-3xl md:text-4xl font-light text-cavelab-gray mb-8 md:mb-12 text-center tracking-tight">
-              Screenshots
-            </h2>
+          <div className="mb-32 md:mb-40">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-24 max-w-7xl mx-auto">
               <div className="bg-cavelab-light-gray rounded-cavelab overflow-hidden shadow-lg">
                 <Image
@@ -51,11 +48,25 @@ export default function DosesApp() {
             </div>
           </div>
 
-          <div className="mb-24 md:mb-32 bg-cavelab-light-gray py-12 md:py-20 -mx-4 md:-mx-8 px-4 md:px-8">
+          <div className="mb-32 md:mb-40 max-w-4xl mx-auto">
+            <div className="space-y-10 text-gray-600">
+              <p className="text-lg md:text-xl leading-relaxed font-light">
+                The Doses app is your personal medication companion, designed to make managing your health simple and intuitive. Whether you're taking daily vitamins or managing multiple prescriptions, Doses helps you stay organized and understand how your medications affect your wellbeing.
+              </p>
+              <p className="text-lg md:text-xl leading-relaxed font-light">
+                Beyond simple reminders, Doses empowers you with insights. Track side effects, log how you feel, and see visual correlations between your medication and your symptoms. The app learns your patterns and helps you identify what works best for your body.
+              </p>
+              <p className="text-lg md:text-xl leading-relaxed font-light">
+                Share your progress with healthcare providers through detailed PDF and CSV reports complete with data visualizations. Doses transforms your medication routine from a chore into a tool for better health outcomes, putting you in control of your wellness journey.
+              </p>
+            </div>
+          </div>
+
+          <div className="mb-32 md:mb-40 py-12 md:py-20">
             <h2 className="text-3xl md:text-4xl font-light text-cavelab-gray mb-12 md:mb-20 text-center tracking-tight">
               Key Features
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-20 gap-y-12 md:gap-y-16 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-20 gap-y-16 md:gap-y-20 max-w-5xl mx-auto">
               <div className="text-center">
                 <h3 className="text-2xl font-light text-cavelab-gray mb-6">Smart Reminders</h3>
                 <p className="text-gray-600 leading-relaxed text-lg">
