@@ -17,22 +17,13 @@ export default function SmartPillbox() {
           </div>
 
           <div className="mb-32 md:mb-40">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 max-w-5xl mx-auto">
+            <div className="max-w-4xl mx-auto">
               <div className="bg-cavelab-light-gray rounded-cavelab overflow-hidden shadow-lg">
                 <Image
-                  src="/1.png"
-                  alt="Smart Pillbox Design 1"
-                  width={600}
-                  height={600}
-                  className="w-full h-auto"
-                />
-              </div>
-              <div className="bg-cavelab-light-gray rounded-cavelab overflow-hidden shadow-lg">
-                <Image
-                  src="/2.png"
-                  alt="Smart Pillbox Design 2"
-                  width={600}
-                  height={600}
+                  src="/5.png"
+                  alt="Smart Pillbox"
+                  width={1200}
+                  height={800}
                   className="w-full h-auto"
                 />
               </div>

@@ -6,7 +6,7 @@ export default function Hero() {
       {/* Background Image with Low Opacity */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/1.png"
+          src="/5.png"
           alt="Background"
           fill
           className="object-cover opacity-60"
